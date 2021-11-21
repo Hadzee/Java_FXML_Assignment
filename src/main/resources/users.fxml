@@ -30,7 +30,7 @@
                 <Label></Label>
                 <Label fx:id="lblDuration" text="Duration: "/>
                 <ChoiceBox fx:id="cbDuration"/>
-                <!--                <Label text=" Year/Years" />-->
+              
                 <Label></Label>
 
 
