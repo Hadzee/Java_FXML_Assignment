@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+      fx:controller="org.example.UserController">
+    <children>
+        <VBox>
+            <children>
+                <HBox alignment="TOP_RIGHT">
+                    <children>
+                        <Label></Label>
+                    </children>
+                </HBox>
+                <Label text="Personal information:"/>
+                <TextField fx:id="firstName" promptText="First Name"/>
+                <TextField fx:id="lastName" promptText="Last Name"/>
+                <TextField fx:id="address" promptText="Address"/>
+                <Label></Label>
+                <Label text=" Speed:"/>
+                <ChoiceBox fx:id="cbSpeed"/>
+                <Label text=" mb/s"/>
+                <Label></Label>
+                <Label fx:id="lbl3" text="Bandwidth: "/>
+                <ChoiceBox fx:id="cbBandwidth"/>
+                <Label text=" GB"/>
+                <Label></Label>
+                <Label fx:id="lblDuration" text="Duration: "/>
+                <ChoiceBox fx:id="cbDuration"/>
+                <!--                <Label text=" Year/Years" />-->
+                <Label></Label>
+
+
+                <HBox alignment="TOP_RIGHT">
+                    <children>
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#savePerson" text="Save"/>
+                        <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearPerson" text="Clear"/>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deletePerson" text="Delete"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <Pane>
+            <TableView fx:id="table">
+                <columns>
+                    <TableColumn text="First Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="firstName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Last Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="lastName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Address">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="address"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn text="Speed (mb/s)">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="speed"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Bandwidth">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="bandwidth"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Duration">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="duration"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </Pane>
+    </children>
+</HBox>

@@ -1,0 +1,58 @@
+.root {
+   -fx-background-color: green;
+}
+
+.label {
+    -fx-text-fill: black;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
+.text-field:hover, .text-field:focused {
+    -fx-border-color: #75606F;
+}
+
+#saveButton, #clearButton {
+    -fx-background-color:gray;
+    -fx-border-color: #FFFFFF;
+
+    -fx-text-fill: black;
+}
+
+#saveButton:hover, #clearButton:hover {
+    -fx-border-color: #75606F;
+}
+
+#saveButton:pressed, #clearButton:pressed {
+    -fx-border-color: #75606F;
+    -fx-background-color: #75606F;
+}
+
+#deleteButton {
+    -fx-background-color:gray;
+    -fx-border-color: #FFFFFF;
+
+    -fx-text-fill: black;
+}
+
+#deleteButton:pressed {
+    -fx-border-color: #75606F;
+    -fx-background-color: #75606F;
+}
+
+#deleteButton:hover {
+    -fx-border-color: #75606F;
+}
+
+.table-column {
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+}
+
+#cbSpeed, #cbBandwidth, #cbDuration {
+    -fx-background-color: aqua;
+}
